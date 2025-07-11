@@ -5,7 +5,7 @@ module.exports = {
   coverageThreshold: { global: { branches: 80, functions: 80, lines: 80, statements: 80 } },
   moduleNameMapper: { '\\.(css|less|scss|sass)$': 'identity-obj-proxy' },
   resetMocks: true,
-  setupFilesAfterEnv: ['<rootDir>/src/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jsdom',
   transform: {
     '^.+\\.[jt]sx?$': 'babel-jest',

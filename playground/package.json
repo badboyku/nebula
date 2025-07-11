@@ -1,0 +1,81 @@
+{
+  "name": "playground",
+  "description": "This is the playground for nebula.",
+  "version": "1.0.0",
+  "author": "badboyku",
+  "license": "MIT",
+  "main": "src/index",
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack-cli serve",
+    "start:dist": "http-server ./dist",
+    "build": "webpack --mode production",
+    "clean:build": "rimraf ./dist",
+    "clean:modules": "rimraf ./node_modules ./package-lock.json",
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prettier": "prettier --check \"./src/**/*.{css,scss,json}\"",
+    "prettier:fix": "prettier --write \"./src/**/*.{css,scss,json}\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "file:../node_modules/@babel/runtime",
+    "@babel/runtime-corejs3": "file:../node_modules/@babel/runtime-corejs3",
+    "core-js": "file:../node_modules/core-js",
+    "nebula": "file:..",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom"
+  },
+  "devDependencies": {
+    "@babel/core": "file:../node_modules/@babel/core",
+    "@babel/plugin-transform-runtime": "file:../node_modules/@babel/plugin-transform-runtime",
+    "@babel/preset-env": "file:../node_modules/@babel/preset-env",
+    "@babel/preset-react": "file:../node_modules/@babel/preset-react",
+    "@babel/preset-typescript": "file:../node_modules/@babel/preset-typescript",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@svgr/webpack": "file:../node_modules/@svgr/webpack",
+    "@types/node": "file:../node_modules/@types/node",
+    "@types/react": "file:../node_modules/@types/react",
+    "@types/react-dom": "file:../node_modules/@types/react-dom",
+    "babel-loader": "file:../node_modules/babel-loader",
+    "browserslist": "file:../node_modules/browserslist",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "dotenv": "file:../node_modules/dotenv",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "file:../node_modules/html-webpack-plugin",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "file:../node_modules/postcss",
+    "postcss-flexbugs-fixes": "file:../node_modules/postcss-flexbugs-fixes",
+    "postcss-loader": "^8.1.1",
+    "postcss-normalize": "file:../node_modules/postcss-normalize",
+    "postcss-preset-env": "file:../node_modules/postcss-preset-env",
+    "react-refresh": "^0.17.0",
+    "resolve": "file:../node_modules/resolve",
+    "resolve-url-loader": "file:../node_modules/resolve-url-loader",
+    "sass": "file:../node_modules/sass",
+    "sass-loader": "^16.0.5",
+    "source-map-loader": "^5.0.0",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "typescript": "file:../node_modules/typescript",
+    "webpack": "file:../node_modules/webpack",
+    "webpack-cli": "file:../node_modules/webpack-cli",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-manifest-plugin": "file:../node_modules/webpack-manifest-plugin"
+  }
+}

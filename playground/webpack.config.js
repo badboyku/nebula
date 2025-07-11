@@ -1,11 +1,13 @@
 require('dotenv').config();
 const { createHash } = require('crypto');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const assetInjectMaxSize = parseInt(process.env.ASSET_INJECT_MAX_SIZE, 10) || 10000;
+const disableReactRefresh = (process.env.DISABLE_REACT_REFRESH || 'false').toLowerCase() === 'true';
 const disableSourceMap = (process.env.DISABLE_SOURCE_MAP || 'false').toLowerCase() === 'true';
 const alias = {};
 
@@ -89,11 +91,14 @@ module.exports = (_env, args) => {
               exclude: /node_modules/,
               options: {
                 presets: [
-                  [require.resolve('@babel/preset-env'), { useBuiltIns: 'usage', corejs: '3.43.1' }],
+                  [require.resolve('@babel/preset-env'), { useBuiltIns: 'usage', corejs: '3.44.0' }],
                   [require.resolve('@babel/preset-react'), { runtime: 'automatic' }],
                   require.resolve('@babel/preset-typescript'),
                 ],
-                plugins: [[require.resolve('@babel/plugin-transform-runtime'), { corejs: 3 }]].filter(Boolean),
+                plugins: [
+                  [require.resolve('@babel/plugin-transform-runtime'), { corejs: 3 }],
+                  !isProduction && !disableReactRefresh && require.resolve('react-refresh/babel'),
+                ].filter(Boolean),
                 cacheCompression: false,
                 cacheDirectory: true,
                 compact: isProduction,
@@ -207,6 +212,7 @@ module.exports = (_env, args) => {
           filename: 'css/[name].[contenthash].css',
           chunkFilename: 'css/[name].[contenthash].chunk.css',
         }),
+      !isProduction && !disableReactRefresh && new ReactRefreshWebpackPlugin({ overlay: false }),
     ].filter(Boolean),
     cache: {
       buildDependencies: { defaultWebpack: ['webpack/lib/'], config: [__filename] },
