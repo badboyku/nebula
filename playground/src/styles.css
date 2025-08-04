@@ -1,3 +1,56 @@
 .logo {
   width: 40px;
 }
+
+/* Fonts */
+.settings-fonts {
+  overflow: auto;
+  padding-top: 10px;
+}
+details > summary {
+  background-color: #efefef;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  padding: 5px 7px;
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  white-space: nowrap;
+}
+details > summary:hover {
+  background-color: #dedede;
+}
+details > div {
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  padding: 10px;
+}
+.settings-font-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.settings-font-label {
+  font-size: 14px;
+  padding-right: 5px;
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  white-space: nowrap;
+}
+.settings-font-demo-text {
+  background-color: white;
+  border: 1px solid grey;
+  font-size: 14px;
+  width: 100%;
+  padding: 4px;
+}
+.settings-fonts-note {
+  font-size: 14px;
+  margin-left: 145px;
+  padding-top: 10px;
+}

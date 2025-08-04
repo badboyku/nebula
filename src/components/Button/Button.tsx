@@ -1,9 +1,12 @@
-import React from 'react';
+import MuiButton from '@mui/material/Button';
+import type { ButtonProps as MuiButtonProps } from '@mui/material/Button';
 
-type Props = { label: string };
+export type ButtonProps = { label?: string } & MuiButtonProps;
 
-const Button: React.FC<Props> = ({ label }) => {
-  return <button type="button">{label}</button>;
+const Button = (props: ButtonProps) => {
+  const { label = 'Button', ...rest } = props;
+
+  return <MuiButton {...rest}>{label}</MuiButton>;
 };
 
 export default Button;
