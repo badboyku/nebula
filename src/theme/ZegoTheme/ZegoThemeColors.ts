@@ -75,7 +75,6 @@ export type ZegoThemeColors = {
   white: White;
 };
 
-const { black, white } = common;
 const zegoThemeColors: ZegoThemeColors = {
   // Navy
   navy,
@@ -130,8 +129,8 @@ const zegoThemeColors: ZegoThemeColors = {
   darkPurple: purple[1400],
 
   // Misc
-  black,
-  white,
+  black: common.black,
+  white: common.white,
 };
 
 export default zegoThemeColors;
