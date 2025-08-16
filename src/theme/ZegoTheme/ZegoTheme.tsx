@@ -1,5 +1,5 @@
 import { createTheme as muiCreateTheme } from '@mui/material/styles';
-import colors from './colors';
+import colors from './ZegoThemeColors';
 import type { Theme as MuiTheme } from '@mui/material/styles';
 
 const ZegoTheme: MuiTheme = muiCreateTheme({
