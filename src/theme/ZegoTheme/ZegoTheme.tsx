@@ -1,12 +1,12 @@
 import { createTheme as muiCreateTheme } from '@mui/material/styles';
-import colors from './colors';
-import type { Theme as MuiTheme } from '@mui/material/styles';
+import zegoThemeColors from './zegoThemeColors';
+// import type { Theme as MuiTheme } from '@mui/material/styles';
 
-const ZegoTheme: MuiTheme = muiCreateTheme({
+const ZegoTheme = muiCreateTheme({
   // breakpoints: {
   //   values: { xs: 0, sm: 600, md: 768, lg: 1024, xl: 1280 },
   // },
-  colors,
+  colors: zegoThemeColors,
   components: {
     MuiCssBaseline: {
       styleOverrides: {
@@ -15,8 +15,8 @@ const ZegoTheme: MuiTheme = muiCreateTheme({
     },
   },
   palette: {
-    primary: { main: colors.midnight, dark: colors.midnight },
-    text: { primary: colors.midnight },
+    primary: { main: zegoThemeColors.midnight, dark: zegoThemeColors.midnight },
+    text: { primary: zegoThemeColors.midnight },
   },
   typography: { fontFamily: '"AcuminProRegular","Roboto",cursive,"Helvetica","Arial",sans-serif' },
 });

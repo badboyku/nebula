@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved */
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import image from '@rollup/plugin-image';
@@ -15,21 +16,22 @@ export default [
   {
     input: 'src/index.ts',
     output: [
-      { file: 'dist/index.js', format: 'cjs', sourcemap: true },
-      { file: 'dist/index.esm.js', format: 'esm', sourcemap: true },
-      // {
-      //   file: 'dist/bundle.umd.js',
-      //   format: 'umd',
-      //   name: 'Nebula',
-      //   sourcemap: true,
-      //   globals: {
-      //     '@mui/material/Button': '@mui/material/Button',
-      //     '@mui/material/GlobalStyles': '@mui/material/GlobalStyles',
-      //     '@mui/material/ScopedCssBaseline': '@mui/material/ScopedCssBaseline',
-      //     '@mui/material/styles': '@mui/material/styles',
-      //     'react/jsx-runtime': 'react/jsx-runtime',
-      //   }
-      // },
+      { file: 'dist/index.js', format: 'cjs', sourcemap: true, compact: true },
+      { file: 'dist/index.es.js', format: 'es', sourcemap: true, compact: true },
+      {
+        file: 'dist/index.umd.js',
+        format: 'umd',
+        name: 'Nebula',
+        sourcemap: true,
+        compact: true,
+        globals: {
+          '@mui/material/Button': '@mui/material/Button',
+          '@mui/material/GlobalStyles': '@mui/material/GlobalStyles',
+          '@mui/material/ScopedCssBaseline': '@mui/material/ScopedCssBaseline',
+          '@mui/material/styles': '@mui/material/styles',
+          'react/jsx-runtime': 'react/jsx-runtime',
+        },
+      },
     ],
     plugins: [
       del({ targets: ['dist/*'], verbose: true }),
@@ -65,8 +67,8 @@ export default [
   },
   {
     input: 'dist/types/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+    output: [{ file: 'dist/index.d.ts', format: 'es' }],
     plugins: [dts()],
-    external: [/\.css$/],
+    // external: [/\.css$/],
   },
 ];

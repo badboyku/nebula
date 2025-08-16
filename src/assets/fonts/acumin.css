@@ -1,36 +1,36 @@
 @font-face {
-  font-family: 'AcuminProBold';
+  font-family: "AcuminProBold";
   font-style: normal;
   font-display: swap;
-  src: url('./acumin-pro-bold.woff') format('woff');
+  src: url("./acumin-pro-bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'AcuminProBoldItalic';
+  font-family: "AcuminProBoldItalic";
   font-style: normal;
   font-display: swap;
-  src: url('./acumin-pro-bold-italic.woff') format('woff');
+  src: url("./acumin-pro-bold-italic.woff") format("woff");
 }
 @font-face {
-  font-family: 'AcuminProExtraLight';
+  font-family: "AcuminProExtraLight";
   font-style: normal;
   font-display: swap;
-  src: url('./acumin-pro-extra-light.woff') format('woff');
+  src: url("./acumin-pro-extra-light.woff") format("woff");
 }
 @font-face {
-  font-family: 'AcuminProItalic';
+  font-family: "AcuminProItalic";
   font-style: normal;
   font-display: swap;
-  src: url('./acumin-pro-italic.woff') format('woff');
+  src: url("./acumin-pro-italic.woff") format("woff");
 }
 @font-face {
-  font-family: 'AcuminProLight';
+  font-family: "AcuminProLight";
   font-style: normal;
   font-display: swap;
-  src: url('./acumin-pro-light.woff') format('woff');
+  src: url("./acumin-pro-light.woff") format("woff");
 }
 @font-face {
-  font-family: 'AcuminProRegular';
+  font-family: "AcuminProRegular";
   font-style: normal;
   font-display: swap;
-  src: url('./acumin-pro-regular.woff') format('woff');
+  src: url("./acumin-pro-regular.woff") format("woff");
 }
