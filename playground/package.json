@@ -64,7 +64,7 @@
     "dotenv": "file:../node_modules/dotenv",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "file:../node_modules/html-webpack-plugin",
-    "mini-css-extract-plugin": "^2.9.2",
+    "mini-css-extract-plugin": "^2.9.4",
     "postcss": "file:../node_modules/postcss",
     "postcss-flexbugs-fixes": "file:../node_modules/postcss-flexbugs-fixes",
     "postcss-loader": "^8.1.1",
