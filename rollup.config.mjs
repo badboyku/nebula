@@ -19,7 +19,7 @@ export default [
       { file: 'dist/index.js', format: 'cjs', sourcemap: true },
       { file: 'dist/index.es.js', format: 'es', sourcemap: true },
       {
-        file: 'dist/bundle.umd.js',
+        file: 'dist/index.umd.js',
         format: 'umd',
         name: 'Nebula',
         sourcemap: true,
