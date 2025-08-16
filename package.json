@@ -9,7 +9,7 @@
     "url": "git+https://github.com/badboyku/nebula.git"
   },
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
