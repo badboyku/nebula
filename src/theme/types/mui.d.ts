@@ -1,4 +1,4 @@
-import type ZegoThemeColors from '../ZegoTheme/zegoThemeColors';
+import type { ZegoThemeColors } from '../ZegoTheme/ZegoThemeColors';
 
 declare module '@mui/material/styles' {
   interface Theme {

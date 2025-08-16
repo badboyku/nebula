@@ -1,3 +1,7 @@
+// export { default as Button } from './components/Button';
+// export { default as ThemeProvider } from './theme/ThemeProvider';
+// export { default as ZegoTheme } from './theme/ZegoTheme';
+// export { default as ZegoThemeColors } from './theme/ZegoTheme/ZegoThemeColors';
 import * as colors from './theme/colors';
 
 // Components
@@ -12,5 +16,5 @@ export * from './theme/ThemeProvider';
 // ZegoTheme
 export { default as ZegoTheme } from './theme/ZegoTheme';
 export * from './theme/ZegoTheme';
-export { default as zegoThemeColors } from './theme/ZegoTheme/zegoThemeColors';
-export * from './theme/ZegoTheme/zegoThemeColors';
+export { default as ZegoThemeColors } from './theme/ZegoTheme/ZegoThemeColors';
+export * from './theme/ZegoTheme/ZegoThemeColors';

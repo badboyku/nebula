@@ -16,14 +16,13 @@ export default [
   {
     input: 'src/index.ts',
     output: [
-      { file: 'dist/index.js', format: 'cjs', sourcemap: true, compact: true },
-      { file: 'dist/index.es.js', format: 'es', sourcemap: true, compact: true },
+      { file: 'dist/index.js', format: 'cjs', sourcemap: true },
+      { file: 'dist/index.es.js', format: 'es', sourcemap: true },
       {
         file: 'dist/index.umd.js',
         format: 'umd',
         name: 'Nebula',
         sourcemap: true,
-        compact: true,
         globals: {
           '@mui/material/Button': '@mui/material/Button',
           '@mui/material/GlobalStyles': '@mui/material/GlobalStyles',
