@@ -1,8 +1,7 @@
-import { createTheme as muiCreateTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import colors from './ZegoThemeColors';
-import type { Theme as MuiTheme } from '@mui/material/styles';
 
-const ZegoTheme: MuiTheme = muiCreateTheme({
+const ZegoTheme = createTheme({
   // breakpoints: {
   //   values: { xs: 0, sm: 600, md: 768, lg: 1024, xl: 1280 },
   // },
