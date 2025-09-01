@@ -1,7 +1,7 @@
 {
   "name": "playground",
   "description": "This is the playground for nebula.",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "badboyku",
   "license": "MIT",
   "main": "src/index",
