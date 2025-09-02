@@ -4,7 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "./dist/types",
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
