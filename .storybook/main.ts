@@ -5,17 +5,13 @@ const config: StorybookConfig = {
     name: '@storybook/react-webpack5',
     options: { fsCache: true, lazyCompilation: true },
   },
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
-    // '@storybook/addon-interactions', // When update to 9, you don't need this
-    // '@storybook/addon-mdx-gfm',
-    // '@storybook/preset-scss',
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
-    '@storybook/addon-essentials',
     '@storybook/addon-links',
-    // '@storybook/addon-themes',
-    '@storybook/addon-webpack5-compiler-babel',
+    '@storybook/addon-themes',
+    '@storybook/addon-webpack5-compiler-babel'
   ],
   core: {
     builder: {

@@ -1,7 +1,7 @@
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import ThemeProvider from '../src/theme/ThemeProvider';
 import ZegoTheme from '../src/theme/ZegoTheme';
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react-webpack5';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
