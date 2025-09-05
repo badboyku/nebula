@@ -6,6 +6,7 @@ export default meta;
 
 export const MyButton: StoryObj<typeof meta> = {
   args: {
-    label: 'MyButton',
+    label: 'My Button',
+    variant: 'outlined',
   },
 };

@@ -20,9 +20,7 @@ const config: StorybookConfig = {
     },
     disableTelemetry: true,
   },
-  // docs: {
-  //   autodocs: 'tag',
-  // },
+  docs: { defaultName: 'Documentation' },
   typescript: {
     check: true,
     // checkOptions: {},
