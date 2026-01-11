@@ -1,7 +1,5 @@
 import MuiButton from '@mui/material/Button';
-import type { ButtonProps as MuiButtonProps } from '@mui/material/Button';
-
-export type ButtonProps = { label?: string } & MuiButtonProps;
+import { ButtonProps } from './types';
 
 const Button = (props: ButtonProps) => {
   const { label = 'Button', ...rest } = props;
