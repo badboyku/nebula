@@ -1,6 +1,8 @@
 import * as colors from './theme/colors';
 
 // Components
+export { default as Avatar } from './components/Avatar';
+export * from './components/Avatar';
 export { default as Button } from './components/Button';
 export * from './components/Button';
 

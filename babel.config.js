@@ -3,7 +3,7 @@ module.exports = (api) => {
 
   return {
     presets: [
-      // ['@babel/preset-env', { useBuiltIns: 'usage', corejs: '3.45.1' }], // Circular dependencies when building
+      // ['@babel/preset-env', { useBuiltIns: 'usage', corejs: '3.47.0' }], // Circular dependencies when building
       ['@babel/preset-react', { runtime: 'automatic' }],
       '@babel/preset-typescript',
     ],

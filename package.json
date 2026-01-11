@@ -42,18 +42,9 @@
       "eslint --fix"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2% and not dead and not op_mini all"
+  ],
   "peerDependencies": {
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
@@ -61,52 +52,52 @@
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.28.3",
-    "@babel/runtime-corejs3": "^7.28.3",
-    "core-js": "^3.45.1"
+    "@babel/runtime": "^7.28.4",
+    "@babel/runtime-corejs3": "^7.28.4",
+    "core-js": "^3.47.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.3",
-    "@babel/plugin-transform-runtime": "^7.28.3",
-    "@babel/preset-env": "^7.28.3",
-    "@babel/preset-react": "^7.27.1",
-    "@babel/preset-typescript": "^7.27.1",
+    "@babel/core": "^7.28.5",
+    "@babel/plugin-transform-runtime": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@fontsource/material-icons": "^5.2.5",
-    "@fontsource/roboto": "^5.2.6",
-    "@mui/material": "^7.3.2",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^28.0.6",
+    "@fontsource/material-icons": "^5.2.7",
+    "@fontsource/roboto": "^5.2.9",
+    "@mui/material": "^7.3.7",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-image": "^3.0.3",
-    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^12.1.4",
+    "@rollup/plugin-typescript": "^12.3.0",
     "@rollup/plugin-url": "^8.0.2",
-    "@storybook/addon-a11y": "^9.1.4",
-    "@storybook/addon-docs": "^9.1.4",
-    "@storybook/addon-links": "^9.1.4",
-    "@storybook/addon-themes": "^9.1.4",
+    "@storybook/addon-a11y": "^9.1.17",
+    "@storybook/addon-docs": "^9.1.17",
+    "@storybook/addon-links": "^9.1.17",
+    "@storybook/addon-themes": "^9.1.17",
     "@storybook/addon-webpack5-compiler-babel": "^3.0.6",
-    "@storybook/react-webpack5": "^9.1.4",
-    "@types/node": "^24.3.1",
-    "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.9",
-    "eslint-config-badboyku": "^1.0.42",
-    "eslint-plugin-storybook": "9.1.4",
+    "@storybook/react-webpack5": "^9.1.17",
+    "@types/node": "^25.0.6",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "eslint-config-badboyku": "^1.0.45",
+    "eslint-plugin-storybook": "^9.1.4",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.6",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "rimraf": "^6.0.1",
-    "rollup": "^4.50.0",
+    "lint-staged": "^16.2.7",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "rimraf": "^6.1.2",
+    "rollup": "^4.55.1",
     "rollup-plugin-copy": "^3.5.0",
-    "rollup-plugin-delete": "^3.0.1",
-    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-delete": "^3.0.2",
+    "rollup-plugin-dts": "^6.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^9.1.4",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   }
 }

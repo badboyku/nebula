@@ -24,6 +24,7 @@ export default [
         name: 'Nebula',
         sourcemap: true,
         globals: {
+          '@mui/material/Avatar': '@mui/material/Avatar',
           '@mui/material/Button': '@mui/material/Button',
           '@mui/material/GlobalStyles': '@mui/material/GlobalStyles',
           '@mui/material/ScopedCssBaseline': '@mui/material/ScopedCssBaseline',

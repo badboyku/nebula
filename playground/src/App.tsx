@@ -1,4 +1,4 @@
-import { Button, ThemeProvider } from 'nebula';
+import { Avatar, Button, ThemeProvider } from 'nebula';
 import React from 'react';
 import HelloWorld from './components/HelloWorld';
 import logoUrl, { ReactComponent as Logo } from './logo.svg';
@@ -34,6 +34,15 @@ const App = () => {
         <HelloWorld />
         <img src={logoUrl} className="logo" alt="logo" />
         <Logo width={40} />
+        <div>
+          <Avatar />
+        </div>
+        <div>
+          <Avatar letters="AB" />
+        </div>
+        <div>
+          <Avatar src="https://mui.com/static/images/avatar/1.jpg" />
+        </div>
         <div>
           <Button label="My Button" variant="outlined" />
         </div>
